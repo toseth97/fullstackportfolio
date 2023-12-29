@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --primary-desaturated-cyan: #5FB4A2;
+  --primary-dark-blue: #203A4C ;
+  --primary-grayish-blue: #33323D;
+  --secondary-vlight-grey: #FAFAFA;
+  --secondary-light-grey: #EAEAEB;
+  --secondary-bright-red: #F43030;
+}
+
+*{
+  /* font-family: 'Ibarra Real Nova', serif; */
+  font-family: 'Public Sans', sans-serif;
+  padding: 0 ;
+  margin: 0 ;
+  box-sizing: border-box;
+  transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.text-desaturated-cyan{
+  color: var(--primary-desaturated-cyan);
+}
+.h-80{
+  height: 90vh;
+}
+.title_text{
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.875);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.mobileUl>.listItem, .mobileUl>.listItem>a{
+  display: block;
+  width: 100%;
+}
+
+
+.listItem:hover{
+  color: var(--primary-desaturated-cyan);
+}
+
+.hero{
+  background-image: url("./static/images/desktop-ff-fotor-2023122823485.png");
+  background-size: cover;
+  background-clip: content-box;
+  background-repeat: no-repeat
+
+}
+
+.heroIntro{
+  background-color: white;
+  font-family: 'Playfair Display', serif;
+  height: full;
+}
+.heroIntro>h1{
+  font-family: 'Ibarra Real Nova', serif;
+}
+.aboutBtn{
+  background-color: var(--primary-dark-blue)
+}
+.portfolioBtn{
+  background-color: white;
+  color: var(--primary-dark-blue);
+  border: 2px solid var(--primary-dark-blue);
+}
+.portfolioBtn:hover{
+  background-color: var(--primary-dark-blue);
+  color: white
+}
+.hLine{
+  width: inherit;
+  height: 1px;
+  background-color: rgba(220, 220, 220, 0.732);
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
