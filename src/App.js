@@ -1,5 +1,6 @@
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
                     <Route path="/" exact element={<Hero />} />
                 </Routes>
             </BrowserRouter>
+            <Footer />
         </div>
     );
 }

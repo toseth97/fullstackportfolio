@@ -11,7 +11,7 @@ const Hero = () => {
 
             <div className='heroIntro lg:w-7/12 w-11/12 lg:absolute relative bottom-8  lg:left-0 left:0 mt-8 lg:p-8 p-0 lg:mt-0'>
                 <h1 className='lg:text-5xl tracking-wide opacity-80 text-2xl font-bold my-8'>Hey, I'm Tobiloba Lawal. <br/>I love building wonderful web applications.</h1>
-                <Link to="/about"  className='aboutBtn inline-block py-4 px-16 mb-8 text-white text-sm'>About Me</Link>
+                <Link to="/"  className='aboutBtn inline-block py-4 px-16 mb-8 text-white text-sm'>About Me</Link>
             </div>
         </div>
         
@@ -38,12 +38,7 @@ const Hero = () => {
           </div>
 
         </div>
-        <div className='lg:w-9/12 w-10/12 flex lg:flex-row flex-col lg:justify-between justify-center items-center lg:my-16 mb-16 gap-8'>
-          <h1 className='w-11/12 lg:w-4/12 lg:text-4xl text-3xl lg:text-left text-center title_text font-bold'>Interested in doing a project together?</h1>
-          <div className='hLine w-4/12 hidden lg:flex'></div>
-          <Link to="/contact" className='portfolioBtn inline-block my-2 mb-2 py-3 px-16 text-sm' >CONTACT ME</Link>
-
-        </div>
+        
 
     </section>
   )
