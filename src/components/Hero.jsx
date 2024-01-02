@@ -8,6 +8,9 @@ const Hero = () => {
 
   useEffect(() => {
     document.title = 'Devwithtobi - Home';
+    document.getElementById("home").style.color = "#5FB4A2"
+        document.getElementById("portfolio").style.color = "#000"
+        document.getElementById("contact").style.color = "#000"
   }, []);
 
   const mySectionRef = useRef(null);

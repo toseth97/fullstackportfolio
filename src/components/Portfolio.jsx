@@ -8,6 +8,10 @@ const Portfolio = () => {
         document.title = 'Devwithtobi - Portfolio';
         //scroll to the top every time this page is opened.
         window.scrollTo(0, 0)
+
+        document.getElementById("portfolio").style.color = "#5FB4A2"
+        document.getElementById("home").style.color = "#000"
+        document.getElementById("contact").style.color = "#000"
     }, []);
     
 

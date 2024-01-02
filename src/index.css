@@ -39,6 +39,10 @@ header{
   width: 100%;
 }
 
+.blogBtn{
+  background-color: var(--primary-dark-blue);
+}
+
 
 .listItem:hover{
   color: var(--primary-desaturated-cyan);
@@ -77,6 +81,7 @@ header{
   height: 1px;
   background-color: rgba(220, 220, 220, 0.732);
 }
+
 
 
 

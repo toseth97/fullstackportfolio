@@ -23,7 +23,7 @@ export const portfolio = [
     },
     {
         id: 3,
-        name: "He-Code Commerce",
+        name: "He-Commerce",
         image: ecommerce,
         description:
             "This project is a frontend challenge I saw online and felt i should do something with a free api. The project was basic build with reactJS",
