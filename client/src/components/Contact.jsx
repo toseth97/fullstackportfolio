@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { LuGithub } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Contact = () => {
     const [contactMail, setContactMail] = useState({
@@ -11,6 +12,9 @@ const Contact = () => {
         email: "",
         message: "",
     });
+
+    const [loadState, setLoadState] = useState(false);
+
     useEffect(() => {
         //changing the page title.
         document.title = "Devwithtobi - Contact";
@@ -23,12 +27,30 @@ const Contact = () => {
     }, []);
 
     //function to handle change for the react form
-    function handleInputChanges(event) {
+    const handleInputChanges = (event) => {
         const { name, value } = event.target;
         setContactMail((prev) => {
             return { ...prev, [name]: value };
         });
-    }
+    };
+
+    const sendMessage = async (event) => {
+        event.preventDefault();
+
+        setLoadState(true);
+        try {
+            const response = await fetch("http://localhost:3300/contact-me", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(contactMail),
+            });
+            console.log(response);
+            setLoadState(false);
+        } catch (err) {
+            setLoadState(false);
+            console.log(err);
+        }
+    };
 
     return (
         <div className=" w-full flex flex-col items-center justify-center">
@@ -101,7 +123,10 @@ const Contact = () => {
                         Contact Me
                     </h1>
                     <div className="lg:w-6/12 w-full text-justify">
-                        <form action="">
+                        <form
+                            onSubmit={(event) => sendMessage(event)}
+                            method="post"
+                        >
                             <div className="flex flex-col gap-2 my-3">
                                 <label htmlFor="name" className="font-semibold">
                                     Name
@@ -159,9 +184,12 @@ const Contact = () => {
                                     style={{ resize: "none" }}
                                 ></textarea>
                             </div>
-
-                            <button className="blogBtn text-white px-8 py-2">
-                                Send Message
+                            <button className="blogBtn text-white w-5/12 flex items-center justify-center p-2">
+                                {loadState ? (
+                                    <div className="loadState"></div>
+                                ) : (
+                                    "Send Message"
+                                )}
                             </button>
                         </form>
                     </div>
