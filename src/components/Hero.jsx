@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeroImg from "../static/images/desktop-ff-new.png"
 import AboutImg from "../static/images/passport.jpeg"
 import { Link } from 'react-router-dom'
 
 const Hero = () => {
+  //changing the page title
+
+  useEffect(() => {
+    document.title = 'Devwithtobi - Home';
+  }, []);
+
+
+
+
+
   return (
     <section className='w-full flex flex-col justify-center items-center mt-4 lg:mt-8  '>
         <div className='lg:w-9/12 w-11/12 flex flex-col justify-center items-center relative pb-8 '>

@@ -21,8 +21,8 @@ const Footer = () => {
                 <img src={Logo} alt="logo" width={200}/>
                 <ul className='flex lg:flex-row flex-col  items-center lg:justify-between justify-center gap-5 text-white text-xs lg:pb-0 pb-8 '>
                     <li className='list-item text-sm' ><a className='mx-4 px-2 inline-block' href='/'>HOME</a></li>
-                    <li className=' text-sm' ><a className=' mx-4 px-2 inline-block' href='/'>PORTFOLIO</a></li>
-                    <li className=' text-sm' ><a className=' mx-4 px-2 inline-block' href='/'>CONTACT</a></li>
+                    <li className=' text-sm' ><a className=' mx-4 px-2 inline-block' href='/portfolio'>PORTFOLIO</a></li>
+                    <li className=' text-sm' ><a className=' mx-4 px-2 inline-block' href='/contact'>CONTACT</a></li>
                 </ul>
                 <div className='flex item-center justify-center gap-8 text-white lg:pb-0 pb-8 '>
                     <a href='https://www.linkedin.com/in/tobiloba-lawal-1097a6132/' target='_blank' className='p-2 rounded-full border hover:border-white  border-slate-800 ' rel='noreferrer'> <FaLinkedinIn/> </a>

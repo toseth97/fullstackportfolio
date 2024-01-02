@@ -11,8 +11,8 @@ const Navigation = () => {
                 <img src={Logo} alt='logo' className='logoImage' width={90}/>
                 <ul className='lg:flex hidden items-center justify-between gap-5 '>
                     <li className='listItem text-sm' ><a className='mx-4 px-2' href='/'>HOME</a></li>
-                    <li className='listItem text-sm' ><a className=' mx-4 px-2' href='/'>PORTFOLIO</a></li>
-                    <li className='listItem text-sm' ><a className=' mx-4 px-2' href='/'>CONTACT</a></li>
+                    <li className='listItem text-sm' ><a className=' mx-4 px-2' href='/portfolio'>PORTFOLIO</a></li>
+                    <li className='listItem text-sm' ><a className=' mx-4 px-2' href='/contact'>CONTACT</a></li>
                 </ul>
                 <div className='mobileBtn lg:hidden flex' onClick={()=>setMenuClick(prev=>!prev)}>
                     {
@@ -24,8 +24,8 @@ const Navigation = () => {
             {
                 menuClick?<ul className='block items-center text-center w-full justify-between gap-5 mobileUl '>
                 <li className='listItem border-b' ><a className='my-4 py-2' href='/'>Home</a></li>
-                <li className='listItem border-b' ><a className='my-4 py-2' href='/'>About</a></li>
-                <li className='listItem' ><a className='my-4 py-2' href='/'>Contact</a></li>
+                <li className='listItem border-b' ><a className='my-4 py-2' href='/portfolio'>Portfolio</a></li>
+                <li className='listItem' ><a className='my-4 py-2' href='/contact'>Contact</a></li>
             </ul>:null
             }
         </header>
