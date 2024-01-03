@@ -112,6 +112,15 @@ header{
   }
 }
 
+.flashMessage_true{
+  background-color: rgba(60, 210, 60, 0.763);
+  color: white;
+}
+.flashMessage_false{
+  background-color: rgba(207, 83, 83, 0.785);
+  color: black;
+}
+
 
 
 @tailwind base;

@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { LuGithub } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 const Contact = () => {
     const [contactMail, setContactMail] = useState({
         name: "",
-        email: "",
+        sender_email: "",
         message: "",
     });
+    const [flashMessage, setFlashMessage] = useState(null);
 
     const [loadState, setLoadState] = useState(false);
 
@@ -39,12 +39,30 @@ const Contact = () => {
 
         setLoadState(true);
         try {
-            const response = await fetch("http://localhost:3300/contact-me", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(contactMail),
-            });
-            console.log(response);
+            const response = await fetch(
+                "https://calm-teal-cougar-vest.cyclic.app/contact-me",
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(contactMail),
+                }
+            );
+            const data = await response.json();
+            setFlashMessage(data);
+            if (response.status === 200 && data.message) {
+                setContactMail({
+                    name: "",
+                    sender_email: "",
+                    message: "",
+                });
+                setTimeout(() => {
+                    setFlashMessage(null);
+                }, 4000);
+            } else {
+                setTimeout(() => {
+                    setFlashMessage(null);
+                }, 4000);
+            }
             setLoadState(false);
         } catch (err) {
             setLoadState(false);
@@ -135,6 +153,7 @@ const Contact = () => {
                                     type="text"
                                     id="name"
                                     name="name"
+                                    value={contactMail.name}
                                     onChange={(event) =>
                                         handleInputChanges(event)
                                     }
@@ -145,15 +164,16 @@ const Contact = () => {
                             </div>
                             <div className="flex flex-col gap-2 my-3">
                                 <label
-                                    htmlFor="email"
+                                    htmlFor="sender_email"
                                     className="font-semibold"
                                 >
                                     Email Address
                                 </label>
                                 <input
                                     type="email"
-                                    id="email"
-                                    name="email"
+                                    id="sender_email"
+                                    name="sender_email"
+                                    value={contactMail.sender_email}
                                     onChange={(event) =>
                                         handleInputChanges(event)
                                     }
@@ -173,6 +193,7 @@ const Contact = () => {
                                     type="text"
                                     id="message"
                                     name="message"
+                                    value={contactMail.message}
                                     onChange={(event) =>
                                         handleInputChanges(event)
                                     }
@@ -191,6 +212,15 @@ const Contact = () => {
                                     "Send Message"
                                 )}
                             </button>
+                            {flashMessage && (
+                                <div
+                                    className={`text-center my-2 p-2 rounded flashMessage_${flashMessage.type}`}
+                                >
+                                    {flashMessage.type === true
+                                        ? "Message sent"
+                                        : "Error, We could not send the message at the moment"}
+                                </div>
+                            )}
                         </form>
                     </div>
                 </div>
