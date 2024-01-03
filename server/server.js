@@ -34,10 +34,11 @@ app.post("/contact-me", (req, res) => {
             pass: process.env.PASS, // generated ethereal password
         },
     });
+
     let mailOptions = {
-        from: sender_email,
+        from: `${name} <${sender_email}>`,
         to: `oluwasheun9721@gmail.com`,
-        subject: `DevWithTobi <${name}>`,
+        subject: `DevWithTobi ( ${name} )`,
         html: `<div>${message}<br><br> This message was from ${sender_email}</div>`,
     };
     transporter.sendMail(mailOptions, function (err, info) {
