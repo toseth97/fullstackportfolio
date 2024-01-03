@@ -64,7 +64,7 @@ const SinglePagePortfolio = () => {
                         Static Image
                     </h1>
                     <div
-                        className={`${bg} relative w-full lg:min-h-60 h-36 overflow-hidden`}
+                        className={`${bg} relative w-full lg:min-h-48 h-36 overflow-hidden`}
                     >
                         <img
                             src={image_2}
