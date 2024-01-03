@@ -37,7 +37,7 @@ app.post("/contact-me", (req, res) => {
     let mailOptions = {
         from: sender_email,
         to: `oluwasheun9721@gmail.com`,
-        subject: `Message From Your Portfolio Website`,
+        subject: `DevWithTobi <${name}>`,
         html: `<div>${message}<br><br> This message was from ${sender_email}</div>`,
     };
     transporter.sendMail(mailOptions, function (err, info) {
