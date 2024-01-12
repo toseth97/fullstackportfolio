@@ -52,6 +52,42 @@ app.post("/contact-me", (req, res) => {
     });
 });
 
+//heddy decorations
+
+app.post("/heddy-contact", (req, res) => {
+    const { name, sender_email, message } = req.body;
+    if (!name && !sender_email && !message)
+        return res.send({
+            status: "error",
+            message: "Please fill all fields.",
+        });
+    let transporter = nodeMailer.createTransport({
+        host: "smtp.gmail.com",
+        port: 465,
+        secure: true,
+        auth: {
+            user: process.env.USER, // generated ethereal email
+            pass: process.env.PASS, // generated ethereal password
+        },
+    });
+
+    let mailOptions = {
+        from: `${name} <${sender_email}>`,
+        to: `heddydecor@gmail.com`,
+        subject: `HeddyDecorations Website ( ${name} )`,
+        html: `<div>${message}<br><br> This message was from ${sender_email}</div>`,
+    };
+    transporter.sendMail(mailOptions, function (err, info) {
+        if (err) {
+            console.log(err.message);
+            return res.status(500).json({ message: "error", type: false });
+        } else {
+            console.log("Email sent");
+            return res.status(200).json({ message: "success", type: true });
+        }
+    });
+});
+
 app.listen(PORT, () => {
     console.log(`server running on port ${PORT}`);
 });

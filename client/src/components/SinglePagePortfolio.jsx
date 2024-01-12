@@ -10,18 +10,8 @@ const SinglePagePortfolio = () => {
 
     const { id } = useParams();
     const content = portfolio.find((item) => item.id === Number(id));
-    const {
-        bg,
-        image,
-        image_2,
-        info,
-        description,
-        sm_1,
-        sm_2,
-        link,
-        name,
-        tools,
-    } = content;
+    const { bg, image, image_2, info, description, sm_1, link, name, tools } =
+        content;
     return (
         <div className="w-full flex flex-col items-center justify-center">
             <div className={`${bg} relative w-10/12 mt-8 lg:h-screen h-60`}>
