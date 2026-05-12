@@ -1,12 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Navigation = () => {
   const [menuClick, setMenuClick] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const prevOverflow = document.body.style.overflow;
+
+    if (menuClick) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = prevOverflow || "";
+    }
+
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") setMenuClick(false);
+    };
+
+    if (menuClick) window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = prevOverflow || "";
+    };
+  }, [menuClick]);
+
 
   const activeColor = (path) =>
     pathname === path ? { color: "#5FB4A2" } : undefined;

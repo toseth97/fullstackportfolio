@@ -33,8 +33,9 @@ const CvDownloadMenu = () => {
 
       {open ? (
         <div
-          className="absolute right-0 mt-2 w-52 rounded-xl border border-gray-800 bg-black/70 backdrop-blur-md p-2 shadow-lg"
+          className="absolute right-0 mt-2 w-52 rounded-xl border border-gray-800 bg-black/70 backdrop-blur-md p-2 shadow-lg z-[9999]"
           onMouseLeave={() => setOpen(false)}
+          onTouchEnd={() => setOpen(false)}
         >
           {options.map((opt) => (
             <Link
