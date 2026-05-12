@@ -59,7 +59,7 @@ export default function HomePageControl() {
               <div>
                 <p className="text-xs tracking-widest text-cyber-muted">/00 mission control</p>
                 <h1 className="title_text text-green-400 text-2xl sm:text-3xl lg:text-5xl mt-2">
-                  TOBILObA LAWAL
+                  TOBILOBA LAWAL
                 </h1>
                 <p className="mt-3 text-sm sm:text-base text-gray-300 max-w-2xl">
                   <span className="text-blue-300">Junior Penetration Tester</span> •{' '}
@@ -72,7 +72,7 @@ export default function HomePageControl() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="border border-gray-800 bg-black/30 rounded-xl p-3">
                     <p className="text-[11px] text-cyber-muted tracking-widest">LOCATION</p>
-                    <p className="mt-1 text-sm text-gray-200">Lagos, Nigeria</p>
+                    <p className="mt-1 text-sm text-gray-200">Lagos, Nigeria (open to relocation)</p>
                   </div>
                   <div className="border border-gray-800 bg-black/30 rounded-xl p-3">
                     <p className="text-[11px] text-cyber-muted tracking-widest">PHONE</p>
@@ -89,15 +89,19 @@ export default function HomePageControl() {
                     href="https://www.linkedin.com/in/tobiloba-lawal-1097a6132/"
                     target="_blank"
                     rel="noreferrer"
-                    className="cyber-chip border border-gray-800 bg-black/30 hover:border-green-400/60"
+                                      className="cyber-chip border border-gray-800 bg-black/30 hover:border-green-400/60"
+                                      title="LinkedIn"
                   >
                     LinkedIn
                   </a>
                   <a
-                    href="#"
+                    href="medium.com/@oluwasheun9721
+"
+                    target="_blank"
+                    rel="noreferrer"
                     className="cyber-chip border border-gray-800 bg-black/30 hover:border-green-400/60"
                     onClick={(e) => e.preventDefault()}
-                    title="Add Medium URL"
+                    title="Medium"
                   >
                     Medium
                   </a>
@@ -157,19 +161,19 @@ export default function HomePageControl() {
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/labs"
-                  className="w-full sm:w-auto cyber-btn border border-green-400/60 bg-green-400/10 hover:bg-green-400/20"
+                  className="w-full sm:w-auto cyber-btn border border-green-400/60 bg-green-400/10 hover:bg-green-400/20 p-2 rounded-lg" 
                 >
                   Explore Labs
                 </Link>
                 <Link
                   href="/experience"
-                  className="w-full sm:w-auto cyber-btn border border-gray-800/80 bg-black/20 hover:border-purple-400/60"
+                  className="w-full sm:w-auto cyber-btn border border-gray-800/80 bg-black/20 hover:border-purple-400/60 p-2 rounded-lg"
                 >
                   Security-First Experience
                 </Link>
                 <Link
                   href="/certifications"
-                  className="w-full sm:w-auto cyber-btn border border-gray-800/80 bg-black/20 hover:border-blue-300/60"
+                  className="w-full sm:w-auto cyber-btn border border-gray-800/80 bg-black/20 hover:border-blue-300/60 p-2 rounded-lg"
                 >
                   Verified Certs
                 </Link>

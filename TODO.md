@@ -1,33 +1,20 @@
-# TODO - Futuristic Cybersecurity Portfolio Redesign
+ # TODO
 
-## Step 1 — Data + routes model
-- [ ] Replace `lib/utils.js` portfolio dataset with cybersecurity narrative objects (labs/projects/infra/certs) including keywords SQLi, XSS, BitLocker.
+## Certifications updates
+- [x] Inspect existing `components/CertificationsPage.jsx` structure.
+- [x] Create reusable certificate card + modal components.
+- [x] Populate the page with the requested certifications:
 
-## Step 2 — Add new App Router pages (rename routes)
-- [ ] Create `app/labs/page.js` and `app/labs/[id]/page.js`.
-- [ ] Create `app/experience/page.js`.
-- [ ] Create `app/certifications/page.js`.
-- [ ] Keep existing `/portfolio` routes working (either redirect or alias to `/labs`) to avoid broken links.
+  - eJPT (eLearnSecurity Junior Penetration Tester) (INE)
+  - ISC2 Certified in Cybersecurity (CC)
+  - Google IT Support Certificate (Coursera)
+  - Google Cybersecurity Professional Certificate (Coursera)
+  - Cisco Ethical Hacking (Cisco Netacad)
+  - Web Security Fundamental (Tryhackme)
+  - Cisco Junior Cybersecurity Analyst (Cisco Netacad)
+- [x] Map each certification to the correct image filename(s) in `public/Certificates/`.
 
-## Step 3 — Update navigation
-- [ ] Update `components/Navigation.jsx` links to include Labs/Experience/Certifications.
+- [ ] Update styling to match the current cyber UI.
+- [ ] Run `npm test`/`npm run build` (or `npm run lint` if available) to ensure Next.js builds.
 
-## Step 4 — Redesign UI components
-- [ ] Rewrite `components/Hero.jsx` for futuristic “security-first” identity and Europe-ready positioning.
-- [ ] Rewrite `components/Footer.jsx` for cohesive theme.
-
-## Step 0 — Home redesign (required)
-- [x] Redo `/` page with mission-control HUD layout.
-
-
-## Step 5 — Futuristic theme styling
-- [ ] Overhaul `app/globals.css` (HUD, scanlines, terminal cards, neon borders, reduced motion support).
-
-## Step 6 — Labs components
-- [ ] Create components to render labs/projects grid and detail pages consistently.
-
-## Step 7 — Validation & build
-- [ ] Run `npm run lint`.
-- [ ] Run `npm run build`.
-- [ ] Smoke test: `/`, `/labs`, `/labs/[id]`, `/experience`, `/certifications`.
 

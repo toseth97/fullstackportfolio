@@ -18,7 +18,7 @@ const Navigation = () => {
 
 
         <Link href="/">
-          <img src="/images/logo-removebg-preview.png" alt="logo" className="logoImage" width={90} />
+          <img src="/images/logo_devwithtobi_removebg-white.png" alt="logo" className="logoImage" width={150} />
         </Link>
         <ul className="lg:flex hidden items-center justify-between gap-5">
           <li className="listItem text-sm text-white hover:text-green-400 transition-colors" style={activeColor("")}> 
