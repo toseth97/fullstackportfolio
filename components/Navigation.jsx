@@ -12,8 +12,11 @@ const Navigation = () => {
     pathname === path ? { color: "#5FB4A2" } : undefined;
 
   return (
-    <header className="w-full flex flex-col items-center justify-center shadow-lg sticky top-0 bg-black/90 border-b border-green-400">
-      <nav className="lg:w-9/12 w-11/12 flex items-center justify-between py-2">
+    <header className="w-full flex flex-col items-center justify-center shadow-lg sticky top-0 bg-black/50 backdrop-blur-md border-b border-green-400 z-50">
+
+      <nav className="lg:w-9/12 w-11/12 flex items-center justify-between py-2 relative z-50">
+
+
         <Link href="/">
           <img src="/images/logo-removebg-preview.png" alt="logo" className="logoImage" width={90} />
         </Link>
@@ -49,7 +52,17 @@ const Navigation = () => {
             </Link>
           </li>
         </ul>
-        <div className="mobileBtn lg:hidden flex" onClick={() => setMenuClick((prev) => !prev)}>
+        <div
+          className="mobileBtn lg:hidden flex z-50"
+          role="button"
+          tabIndex={0}
+          aria-label="Toggle navigation"
+          onClick={() => setMenuClick((prev) => !prev)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") setMenuClick((prev) => !prev);
+          }}
+        >
+
           {menuClick ? (
             <i className="bx bx-x bx_menu text-4xl text-green-400"></i>
           ) : (
@@ -59,7 +72,8 @@ const Navigation = () => {
       </nav>
 
       {menuClick ? (
-        <ul className="block items-center text-center w-full justify-between gap-5 mobileUl bg-black/95 border-t border-green-400">
+        <ul className="block items-center text-center w-full justify-between gap-5 mobileUl bg-black/80 backdrop-blur-md border-t border-green-400 z-50">
+
           <li className="listItem border-b border-gray-700">
             <Link className="my-4 py-2 block text-white hover:text-green-400" href="/">
               Home
