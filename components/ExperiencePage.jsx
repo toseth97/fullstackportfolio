@@ -146,7 +146,7 @@ export default function ExperiencePage() {
 
                 <p className="mt-3 text-sm text-gray-300">
                   <span className="text-cyber-muted">Medium write up:</span>{' '}
-                  <a className="text-green-300 hover:underline font-medium" href="#" target="_blank" rel="noreferrer noopener">
+                  <a className="text-green-300 hover:underline font-medium" href="https://medium.com/@oluwasheun9721/cracking-micro-cms-v1-a-full-4-flag-ctf-walkthrough-51d5dc094376" target="_blank" rel="noreferrer noopener">
                     Medium write up Link
                   </a>
                 </p>
