@@ -23,14 +23,24 @@ const Navigation = () => {
               HOME
             </Link>
           </li>
-          <li className="listItem text-sm text-white hover:text-green-400 transition-colors" style={activeColor("/portfolio")}>
-            <Link className="mx-4 px-2" href="/portfolio">
-              PORTFOLIO
+          <li className="listItem text-sm text-white hover:text-green-400 transition-colors" style={activeColor("/labs")}>
+            <Link className="mx-4 px-2" href="/labs">
+              LABS
             </Link>
           </li>
           <li className="listItem text-sm text-white hover:text-green-400 transition-colors" style={activeColor("/contact")}>
             <Link className="mx-4 px-2" href="/contact">
               CONTACT
+            </Link>
+          </li>
+          <li className="listItem text-sm" style={activeColor("/experience")}>
+            <Link className="text-white hover:text-green-400 transition-colors mx-4 px-2" href="/experience">
+              EXPERIENCE
+            </Link>
+          </li>
+          <li className="listItem text-sm" style={activeColor("/certifications")}>
+            <Link className="text-white hover:text-green-400 transition-colors mx-4 px-2" href="/certifications">
+              CERTIFICATIONS
             </Link>
           </li>
           <li className="listItem text-sm" style={activeColor("/blog")}>
@@ -56,8 +66,18 @@ const Navigation = () => {
             </Link>
           </li>
           <li className="listItem border-b border-gray-700">
-            <Link className="my-4 py-2 block text-white hover:text-green-400" href="/portfolio">
-              Portfolio
+            <Link className="my-4 py-2 block text-white hover:text-green-400" href="/labs">
+              Labs
+            </Link>
+          </li>
+          <li className="listItem border-b border-gray-700">
+            <Link className="my-4 py-2 block text-white hover:text-green-400" href="/experience">
+              Experience
+            </Link>
+          </li>
+          <li className="listItem border-b border-gray-700">
+            <Link className="my-4 py-2 block text-white hover:text-green-400" href="/certifications">
+              Certifications
             </Link>
           </li>
           <li className="listItem border-b border-gray-700">

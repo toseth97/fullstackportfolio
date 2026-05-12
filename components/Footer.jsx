@@ -18,8 +18,8 @@ const Footer = () => {
       </div>
 
       <div className="w-full bg-gray-900 flex items-center justify-center border-t border-green-400">
-        <div className="w-10/12 flex lg:flex-row flex-col items-center lg:justify-between justify-center py-4">
-          <img src="/images/logo_devwithtobi_removebg-white.png" alt="logo" width={200} />
+        <div className="w-10/12 flex lg:flex-row flex-col items-center lg:justify-between justify-center py-2">
+          <img src="/images/logo_devwithtobi_removebg-white.png" alt="logo" width={120} />
           <ul className="flex lg:flex-row flex-col items-center lg:justify-between justify-center gap-5 text-white text-xs lg:pb-0 pb-8">
             <li className="list-item text-sm">
               <Link className="mx-4 px-2 inline-block hover:text-green-400 transition-colors" href="/">

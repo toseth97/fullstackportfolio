@@ -1,9 +1,6 @@
-import Portfolio from "../../components/Portfolio";
+import { redirect } from "next/navigation";
 
-export const metadata = {
-  title: "Devwithtobi - Portfolio"
-};
-
-export default function PortfolioPage() {
-  return <Portfolio />;
+export default function LegacyPortfolioPage() {
+  redirect("/labs");
 }
+
