@@ -55,7 +55,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black min-h-screen py-16">
+    <div className="w-full flex flex-col items-center justify-center bg-gradient-to-br from-black via-black/50 to-900 to-black min-h-screen py-16">
       <div className="lg:w-8/12 w-10/12 py-8">
         <div className="flex flex-col lg:flex-row items-start lg:justify-between justify-center gap-5 lg:mt-16 mt-2 border-b border-green-400 pb-8">
           <h1 className="text-4xl title_text font-bold lg:w-4/12 w-full text-green-400">
@@ -85,7 +85,7 @@ const Contact = () => {
           <h1 className="text-4xl title_text font-bold lg:w-4/12 w-full text-green-400">
             Contact Me
           </h1>
-          <div className="lg:w-6/12 w-full text-justify bg-gray-900/50 p-6 rounded border border-green-400">
+          <div className="lg:w-6/12 w-full text-justify bg-black/50 backdrop-blur-md  p-6 rounded border border-green-400">
             <form onSubmit={sendMessage} method="post">
               <div className="flex flex-col gap-2 my-3">
                 <label htmlFor="name" className="font-semibold text-green-400">Name</label>
