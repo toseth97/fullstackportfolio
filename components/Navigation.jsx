@@ -75,27 +75,47 @@ const Navigation = () => {
         <ul className="block items-center text-center w-full justify-between gap-5 mobileUl bg-black/80 backdrop-blur-md border-t border-green-400 z-50">
 
           <li className="listItem border-b border-gray-700">
-            <Link className="my-4 py-2 block text-white hover:text-green-400" href="/">
+            <Link
+              className="my-4 py-2 block text-white hover:text-green-400"
+              href="/"
+              onClick={() => setMenuClick(false)}
+            >
               Home
             </Link>
           </li>
           <li className="listItem border-b border-gray-700">
-            <Link className="my-4 py-2 block text-white hover:text-green-400" href="/labs">
+<Link
+              className="my-4 py-2 block text-white hover:text-green-400"
+              href="/labs"
+              onClick={() => setMenuClick(false)}
+            >
               Labs
             </Link>
           </li>
           <li className="listItem border-b border-gray-700">
-            <Link className="my-4 py-2 block text-white hover:text-green-400" href="/experience">
+<Link
+              className="my-4 py-2 block text-white hover:text-green-400"
+              href="/experience"
+              onClick={() => setMenuClick(false)}
+            >
               Experience
             </Link>
           </li>
           <li className="listItem border-b border-gray-700">
-            <Link className="my-4 py-2 block text-white hover:text-green-400" href="/certifications">
+<Link
+              className="my-4 py-2 block text-white hover:text-green-400"
+              href="/certifications"
+              onClick={() => setMenuClick(false)}
+            >
               Certifications
             </Link>
           </li>
           <li className="listItem border-b border-gray-700">
-            <Link className="my-4 py-2 block text-white hover:text-green-400" href="/contact">
+<Link
+              className="my-4 py-2 block text-white hover:text-green-400"
+              href="/contact"
+              onClick={() => setMenuClick(false)}
+            >
               Contact
             </Link>
           </li>
