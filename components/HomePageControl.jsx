@@ -95,7 +95,7 @@ export default function HomePageControl() {
                     LinkedIn
                   </a>
                   <a
-                    href="medium.com/@oluwasheun9721
+                    href="https://medium.com/@oluwasheun9721
 "
                     target="_blank"
                     rel="noreferrer"
