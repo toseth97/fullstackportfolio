@@ -23,7 +23,7 @@ export default function CertificationsPage() {
       description:
         "Help desk / IT fundamentals with troubleshooting, operating systems, and customer support workflows.",
       subtitle: "IT support & troubleshooting",
-      imageSrc: "/Certificates/Google cybersecurity Cert.png"
+      imageSrc: "/Certificates/Google IT Cert.png"
     },
     {
       title: "Google Cybersecurity Professional Certificate (Coursera)",
@@ -47,10 +47,10 @@ export default function CertificationsPage() {
       imageSrc: "/Certificates/Web Security Fundermental.png"
     },
     {
-      title: "Cisco Junior Cybersecurity Analyst (Cisco Netacad)",
+      title: "ISO/IEC 27001:2022 ISMS",
       description:
-        "SOC-oriented fundamentals including monitoring, alert triage, and incident workflow awareness.",
-      subtitle: "Junior cybersecurity analysis",
+        "Understanding of Information Security Management Systems (ISMS), risk-based controls, governance, and continuous improvement aligned with ISO/IEC 27001:2022.",
+      subtitle: "ISMS (Information Security Management System)",
       imageSrc: "/Certificates/ISOIEC.png"
     }
   ];
@@ -92,5 +92,4 @@ export default function CertificationsPage() {
     </div>
   );
 }
-
 
