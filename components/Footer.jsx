@@ -3,8 +3,10 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { LuGithub } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa6";
+import { FaMedium } from "react-icons/fa6";
 
 import CvDownloadMenu from "./CvDownloadMenu";
+
 
 const Footer = () => {
   return (
@@ -69,7 +71,8 @@ const Footer = () => {
               href="https://www.linkedin.com/in/tobiloba-lawal-1097a6132/"
               target="_blank"
               className="p-2 rounded-full border hover:border-green-400 border-gray-600 transition-colors"
-              rel="noreferrer"
+                          rel="noreferrer"
+                          title="LinkedIn"
             >
               <FaLinkedinIn />
             </a>
@@ -77,7 +80,8 @@ const Footer = () => {
               href="https://wa.me/+2348120272000"
               target="_blank"
               className="p-2 rounded-full border hover:border-green-400 border-gray-600 transition-colors"
-              rel="noreferrer"
+                          rel="noreferrer"
+                          title="Whatsapp"
             >
               <FaWhatsapp />
             </a>
@@ -85,19 +89,32 @@ const Footer = () => {
               href="https://twitter.com/Toseth_official"
               target="_blank"
               className="p-2 rounded-full border hover:border-green-400 border-gray-600 transition-colors"
-              rel="noreferrer"
+                          rel="noreferrer"
+                          title="Twitter"
             >
               <FaXTwitter />
+            </a>
+            <a
+              href="https://medium.com/oluwasheun9721"
+              target="_blank"
+              rel="noreferrer"
+              className="p-2 rounded-full border hover:border-green-400 border-gray-600 transition-colors font-semibold"
+                          aria-label="Medium"
+                          title="Medium"
+            >
+              <FaMedium />
             </a>
             <a
               href="https://github.com/toseth97"
               target="_blank"
               rel="noreferrer"
-              className="p-2 rounded-full border hover:border-green-400 border-gray-600 transition-colors"
+                          className="p-2 rounded-full border hover:border-green-400 border-gray-600 transition-colors"
+                          title="Github"
             >
               <LuGithub />
             </a>
           </div>
+
         </div>
       </div>
     </footer>

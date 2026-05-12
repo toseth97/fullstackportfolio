@@ -4,67 +4,249 @@ export default function ExperiencePage() {
       <div className="w-11/12 lg:w-9/12">
         <div className="mb-10">
           <p className="text-xs tracking-widest text-cyber-muted">/02 experience</p>
-          <h1 className="title_text text-green-400 text-3xl lg:text-5xl">Security-First Support</h1>
+          <h1 className="title_text text-green-400 text-3xl lg:text-5xl">Professional Experience</h1>
           <p className="mt-4 text-sm lg:text-base text-gray-300 max-w-2xl">
-            8+ years bridging enterprise IT operations with practical security engineering—identity, access, encryption,
-            and resilient workflows.
+            Security-first IT support with hands-on risk management and application security testing.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* Professional Experience */}
           <div className="cyber-panel border border-gray-800 bg-black/30 rounded-2xl p-6">
-            <h2 className="title_text text-green-200 text-xl">Infrastructure & AI Integration (Aava Brands)</h2>
+            <h2 className="title_text text-green-200 text-xl">AAVA Brands Limited</h2>
+            <div className="mt-2">
+              <p className="text-sm text-gray-200">
+                <span className="text-green-300 font-mono">IT Support Engineer | Security Analyst</span>{' '}
+                <span className="text-gray-400">(2023 – Present)</span>
+              </p>
+            </div>
+
             <ul className="mt-4 space-y-3">
               <li className="flex gap-3 text-sm text-gray-200">
                 <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                <span>
-                  <span className="text-green-300 font-mono">Secure AI Gateway Deployment (2026)</span> — restored executive access
-                  to ChatGPT/Claude after domain-level blocks using Windows Server 2019 + RDS + GPO, while maintaining
-                  strict network isolation.
-                </span>
+                <span>Provided technical support and resolved system/network issues.</span>
+              </li>
+              <li className="flex gap-3 text-sm text-gray-200">
+                <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                <span>Conducted internal security checks and vulnerability assessments.</span>
+              </li>
+              <li className="flex gap-3 text-sm text-gray-200">
+                <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                <span>Built and maintained a risk register to track and mitigate organizational risks.</span>
               </li>
               <li className="flex gap-3 text-sm text-gray-200">
                 <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
                 <span>
-                  <span className="text-green-300 font-mono">Enterprise Email Migration</span> — Microsoft 365 / Exchange Online migration,
-                  DNS orchestration, and cutover stability.
+                  Created and deployed a VM server environment allowing 5 users remote AI access.
                 </span>
               </li>
               <li className="flex gap-3 text-sm text-gray-200">
                 <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                <span>Managed user access, SharePoint permissions, and system security.</span>
+              </li>
+              <li className="flex gap-3 text-sm text-gray-200">
+                <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                <span>Identified web application vulnerabilities and reported remediation steps.</span>
+              </li>
+              <li className="flex gap-3 text-sm text-gray-200">
+                <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
                 <span>
-                  <span className="text-green-300 font-mono">Full Disk Encryption (FDE) Rollout</span> — BitLocker enablement,
-                  Intune-managed policies, TPM readiness.
+                  Assisted in improving application security posture through responsible vulnerability reporting and remediation recommendations.
                 </span>
               </li>
             </ul>
           </div>
 
           <div className="cyber-panel border border-gray-800 bg-black/30 rounded-2xl p-6">
-            <h2 className="title_text text-green-200 text-xl">Operational Security</h2>
-            <div className="mt-4 space-y-4">
-              <div className="border border-gray-800 bg-black/20 rounded-xl p-4">
-                <p className="text-xs text-cyber-muted">Identity & Access</p>
-                <p className="mt-2 text-sm text-gray-200">Active Directory, Entra ID (Azure AD), Okta, MFA/SSO, least-privilege.</p>
-              </div>
-              <div className="border border-gray-800 bg-black/20 rounded-xl p-4">
-                <p className="text-xs text-cyber-muted">Resilience</p>
-                <p className="mt-2 text-sm text-gray-200">GPO-driven enforcement, change-safe rollouts, incident-first troubleshooting.</p>
-              </div>
-              <div className="border border-gray-800 bg-black/20 rounded-xl p-4">
-                <p className="text-xs text-cyber-muted">Support with Telemetry</p>
-                <p className="mt-2 text-sm text-gray-200">Security-aware ticket triage and reproducible diagnostics for faster SOC handoff.</p>
+            <h2 className="title_text text-green-200 text-xl">Vicmart Enterprises</h2>
+            <div className="mt-2">
+              <p className="text-sm text-gray-200">
+                <span className="text-green-300 font-mono">IT Support Engineer</span>{' '}
+                <span className="text-gray-400">(2018 – 2023)</span>
+              </p>
+            </div>
+
+            <ul className="mt-4 space-y-3">
+              <li className="flex gap-3 text-sm text-gray-200">
+                <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                <span>Delivered end-user support and resolved IT tickets.</span>
+              </li>
+              <li className="flex gap-3 text-sm text-gray-200">
+                <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                <span>Assisted with security awareness and documentation.</span>
+              </li>
+              <li className="flex gap-3 text-sm text-gray-200">
+                <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                <span>Managed reporting systems and network troubleshooting.</span>
+              </li>
+            </ul>
+
+            {/* Forage simulations */}
+            <div className="mt-8">
+              <h3 className="text-green-200 text-lg font-medium">Tata Cybersecurity</h3>
+              <p className="mt-1 text-sm text-gray-200">
+                <span className="text-green-300 font-mono">IAM DEVELOPER</span>{' '}
+                <span className="text-gray-400">Sep/Nov 2024 • Forage job simulation, Remote</span>
+              </p>
+              <ul className="mt-3 space-y-3">
+                <li className="flex gap-3 text-sm text-gray-200">
+                  <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                  <span>Collaborated with a Cybersecurity Consulting team to complete a job simulation focused on identity and access management (IAM).</span>
+                </li>
+                <li className="flex gap-3 text-sm text-gray-200">
+                  <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                  <span>Acquired expertise in IAM principles and cybersecurity best practices, aligning strategies with business objectives.</span>
+                </li>
+                <li className="flex gap-3 text-sm text-gray-200">
+                  <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                  <span>Delivered comprehensive documentation and presentations, effectively communicating complex technical concepts.</span>
+                </li>
+              </ul>
+
+              <div className="mt-6">
+                <h3 className="text-green-200 text-lg font-medium">Commonwealth Bank</h3>
+                <p className="mt-1 text-sm text-gray-200">
+                  <span className="text-green-300 font-mono">SECURITY ANALYST</span>{' '}
+                  <span className="text-gray-400">Sep/Nov 2024 • Forage job simulation, Remote</span>
+                </p>
+                <ul className="mt-3 space-y-3">
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>Specialized in fraud detection and prevention as part of a cybersecurity generalist role, completing a job simulation for Commonwealth Bank.</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>Developed data visualization dashboards using Splunk to uncover patterns in historical customer data, aiding in fraud detection.</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>Responded effectively to cybersecurity incidents, notifying relevant teams and aiding in recovery efforts.</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>Designed infographics to enhance security awareness, promoting best practices for secure password management.</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 border border-gray-800 bg-black/20 rounded-2xl p-6">
-          <h2 className="title_text text-green-200 text-xl">What I’m targeting in Europe</h2>
-          <p className="mt-4 text-sm text-gray-300 max-w-3xl">
-            Mid-to-senior IT Support / SOC Analyst roles—where the expectation is to secure systems while keeping services
-            reliable. I’m “hands-on” across identity, encryption, detection-minded workflows, and web/API risk.
-          </p>
+        {/* Projects */}
+        <div className="mt-6">
+          <div className="cyber-panel border border-gray-800 bg-black/20 rounded-2xl p-6">
+            <h2 className="title_text text-green-200 text-xl">Projects</h2>
+
+            <div className="mt-5 space-y-6">
+              <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
+                <h3 className="text-green-200 text-lg font-medium">Web Application Penetration Test – Micro-CMS v1</h3>
+                <p className="mt-2 text-sm text-gray-300">
+                  Conducted a systematic security assessment of a Content Management System, successfully identifying and exploiting 4 critical vulnerabilities to capture all system flags.
+                </p>
+
+                <p className="mt-3 text-sm text-gray-300">
+                  <span className="text-cyber-muted">Medium write up:</span>{' '}
+                  <a className="text-green-300 hover:underline font-medium" href="#" target="_blank" rel="noreferrer noopener">
+                    Medium write up Link
+                  </a>
+                </p>
+
+                <div className="mt-4">
+                  <p className="text-xs tracking-widest text-cyber-muted">Key Vulnerabilities:</p>
+                  <ul className="mt-3 space-y-3">
+                    <li className="flex gap-3 text-sm text-gray-200">
+                      <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                      <span>
+                        <span className="text-green-300 font-mono">IDOR</span>: Bypassed authorization on the <span className="font-mono">/edit</span> route to access restricted data.
+                      </span>
+                    </li>
+                    <li className="flex gap-3 text-sm text-gray-200">
+                      <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                      <span>
+                        <span className="text-green-300 font-mono">Stored XSS</span>: Exploited unvalidated "Title" fields to achieve persistent script execution.
+                      </span>
+                    </li>
+                    <li className="flex gap-3 text-sm text-gray-200">
+                      <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                      <span>
+                        <span className="text-green-300 font-mono">SQL Injection</span>: Used boolean-based payloads (' or 1=1) to bypass database lookups and extract privileged records.
+                      </span>
+                    </li>
+                    <li className="flex gap-3 text-sm text-gray-200">
+                      <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                      <span>
+                        <span className="text-green-300 font-mono">Reflected XSS</span>: Leveraged improper error handling on 404 pages to execute JavaScript via the URL path.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
+                <h3 className="text-green-200 text-lg font-medium">Web Application Security Assessment – AAVA Brands</h3>
+                <ul className="mt-4 space-y-3">
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>Identified misconfigurations including debug exposure and IDOR risks.</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>Provided remediation aligned with OWASP Top 10.</span>
+                  </li>
+                </ul>
+              </section>
+
+              <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
+                <h3 className="text-green-200 text-lg font-medium">Information Security Risk Management – AAVA Brands</h3>
+
+                <ul className="mt-4 space-y-3">
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>
+                      <span className="text-green-300 font-mono">Risk Analysis</span>: Identified threats like credential stuffing and data breaches across critical assets such as web applications and database servers.
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>
+                      <span className="text-green-300 font-mono">Vulnerability Assessment</span>: Pinpointed system weaknesses including unpatched databases, lack of rate limiting, and weak password policies.
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>
+                      <span className="text-green-300 font-mono">Strategic Mitigation</span>: Developed a risk register calculating impact vs. likelihood and recommended controls like MFA, patch management, and IDS/IPS monitoring.
+                    </span>
+                  </li>
+                </ul>
+              </section>
+
+              <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
+                <h3 className="text-green-200 text-lg font-medium">Secure AI Infrastructure Deployment – AAVA Brands</h3>
+
+                <ul className="mt-4 space-y-3">
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>
+                      <span className="text-green-300 font-mono">Initiative</span>: Built an isolated Windows Server 2019 environment to bypass domain-level blocks on essential AI tools (ChatGPT, Julia, Notebooks).
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>
+                      <span className="text-green-300 font-mono">Access Control</span>: Configured secure remote access for senior management, providing high-productivity tools without compromising the primary DPworld domain controller.
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-gray-200">
+                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+                    <span>
+                      <span className="text-green-300 font-mono">Governance</span>: Executed the project with end-to-end approval from the IT Manager, Head of IT, and General Manager.
+                    </span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
         </div>
       </div>
     </div>
