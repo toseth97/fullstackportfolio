@@ -3,8 +3,8 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Devwithtobi Portfolio",
-  description: "Fullstack portfolio built with Next.js App Router"
+  title: "Tobiloba Lawal -Portfolio",
+  description: "Security-First IT Support Engineer & Ethical Hacker,Bridging the gap between robust infrastructure management and proactive threat defense. 8+ years of experience securing digital environments and empowering users."
 };
 
 export default function RootLayout({ children }) {
