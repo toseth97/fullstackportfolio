@@ -16,6 +16,10 @@
 - [ ] Rewrite `components/Hero.jsx` for futuristic “security-first” identity and Europe-ready positioning.
 - [ ] Rewrite `components/Footer.jsx` for cohesive theme.
 
+## Step 0 — Home redesign (required)
+- [x] Redo `/` page with mission-control HUD layout.
+
+
 ## Step 5 — Futuristic theme styling
 - [ ] Overhaul `app/globals.css` (HUD, scanlines, terminal cards, neon borders, reduced motion support).
 

@@ -1,13 +1,10 @@
-import Hero from "../components/Hero";
+import HomePageControl from "../components/HomePageControl";
 
 export const metadata = {
-  title: "Devwithtobi - Home"
+  title: "Tobiloba Lawal - Home"
 };
 
 export default function HomePage() {
-  return (
-    <div className="w-full flex flex-col items-center justify-center">
-      <Hero />
-    </div>
-  );
+  return <HomePageControl />;
 }
+
