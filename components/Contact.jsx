@@ -126,7 +126,7 @@ const Contact = () => {
                     <LuGithub />
                                   </a>
                      <a
-                                  href="https://medium.com/oluwasheun9721"
+                                  href="https://medium.com/@oluwasheun9721"
                                   target="_blank"
                     rel="noreferrer"
                                       className="bg-gray-800 hover:shadow-lg p-2 rounded border hover:border-green-400 border-gray-600 transition-colors"
