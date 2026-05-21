@@ -138,115 +138,170 @@ export default function ExperiencePage() {
             <h2 className="title_text text-green-200 text-xl">Projects</h2>
 
             <div className="mt-5 space-y-6">
-              <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
-                <h3 className="text-green-200 text-lg font-medium">Web Application Penetration Test – Micro-CMS v1</h3>
-                <p className="mt-2 text-sm text-gray-300">
-                  Conducted a systematic security assessment of a Content Management System, successfully identifying and exploiting 4 critical vulnerabilities to capture all system flags.
-                </p>
 
-                <p className="mt-3 text-sm text-gray-300">
-                  <span className="text-cyber-muted">Medium write up:</span>{' '}
-                  <a className="text-green-300 hover:underline font-medium" href="https://medium.com/@oluwasheun9721/cracking-micro-cms-v1-a-full-4-flag-ctf-walkthrough-51d5dc094376" target="_blank" rel="noreferrer noopener">
-                    Medium write up Link
-                  </a>
-                </p>
+  <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
+    <h3 className="text-green-200 text-lg font-medium">Web Application Security Lab – DVWA (SQL Injection | Low Security)</h3>
 
-                <div className="mt-4">
-                  <p className="text-xs tracking-widest text-cyber-muted">Key Vulnerabilities:</p>
-                  <ul className="mt-3 space-y-3">
-                    <li className="flex gap-3 text-sm text-gray-200">
-                      <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                      <span>
-                        <span className="text-green-300 font-mono">IDOR</span>: Bypassed authorization on the <span className="font-mono">/edit</span> route to access restricted data.
-                      </span>
-                    </li>
-                    <li className="flex gap-3 text-sm text-gray-200">
-                      <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                      <span>
-                        <span className="text-green-300 font-mono">Stored XSS</span>: Exploited unvalidated "Title" fields to achieve persistent script execution.
-                      </span>
-                    </li>
-                    <li className="flex gap-3 text-sm text-gray-200">
-                      <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                      <span>
-                        <span className="text-green-300 font-mono">SQL Injection</span>: Used boolean-based payloads (' or 1=1) to bypass database lookups and extract privileged records.
-                      </span>
-                    </li>
-                    <li className="flex gap-3 text-sm text-gray-200">
-                      <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                      <span>
-                        <span className="text-green-300 font-mono">Reflected XSS</span>: Leveraged improper error handling on 404 pages to execute JavaScript via the URL path.
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </section>
+    <p className="mt-2 text-sm text-gray-300">
+      Conducted a structured SQL Injection assessment on DVWA in a controlled environment to understand how insecure input handling can expose database structure and sensitive user data.
+    </p>
 
-              <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
-                <h3 className="text-green-200 text-lg font-medium">Web Application Security Assessment – AAVA Brands</h3>
-                <ul className="mt-4 space-y-3">
-                  <li className="flex gap-3 text-sm text-gray-200">
-                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                    <span>Identified misconfigurations including debug exposure and IDOR risks.</span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-gray-200">
-                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                    <span>Provided remediation aligned with OWASP Top 10.</span>
-                  </li>
-                </ul>
-              </section>
+    <p className="mt-3 text-sm text-gray-300">
+      <span className="text-cyber-muted">Medium write up:</span>{' '}
+      <a className="text-green-300 hover:underline font-medium" href="https://medium.com/@oluwasheun9721/hands-on-sql-injection-lab-dvwa-low-security-405daa8ef78a" target="_blank" rel="noreferrer noopener">
+        SQL Injection Lab Write-up
+      </a>
+    </p>
 
-              <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
-                <h3 className="text-green-200 text-lg font-medium">Information Security Risk Management – AAVA Brands</h3>
+    <div className="mt-4">
+      <p className="text-xs tracking-widest text-cyber-muted">Key Activities:</p>
+      <ul className="mt-3 space-y-3">
 
-                <ul className="mt-4 space-y-3">
-                  <li className="flex gap-3 text-sm text-gray-200">
-                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                    <span>
-                      <span className="text-green-300 font-mono">Risk Analysis</span>: Identified threats like credential stuffing and data breaches across critical assets such as web applications and database servers.
-                    </span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-gray-200">
-                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                    <span>
-                      <span className="text-green-300 font-mono">Vulnerability Assessment</span>: Pinpointed system weaknesses including unpatched databases, lack of rate limiting, and weak password policies.
-                    </span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-gray-200">
-                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                    <span>
-                      <span className="text-green-300 font-mono">Strategic Mitigation</span>: Developed a risk register calculating impact vs. likelihood and recommended controls like MFA, patch management, and IDS/IPS monitoring.
-                    </span>
-                  </li>
-                </ul>
-              </section>
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            Confirmed SQL Injection vulnerability via input manipulation and backend query behavior analysis.
+          </span>
+        </li>
 
-              <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
-                <h3 className="text-green-200 text-lg font-medium">Secure AI Infrastructure Deployment – AAVA Brands</h3>
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            Enumerated database schema using <span className="text-green-300 font-mono">information_schema</span> to identify tables and columns.
+          </span>
+        </li>
 
-                <ul className="mt-4 space-y-3">
-                  <li className="flex gap-3 text-sm text-gray-200">
-                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                    <span>
-                      <span className="text-green-300 font-mono">Initiative</span>: Built an isolated Windows Server 2019 environment to bypass domain-level blocks on essential AI tools (ChatGPT, Julia, Notebooks).
-                    </span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-gray-200">
-                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                    <span>
-                      <span className="text-green-300 font-mono">Access Control</span>: Configured secure remote access for senior management, providing high-productivity tools without compromising the primary DPworld domain controller.
-                    </span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-gray-200">
-                    <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
-                    <span>
-                      <span className="text-green-300 font-mono">Governance</span>: Executed the project with end-to-end approval from the IT Manager, Head of IT, and General Manager.
-                    </span>
-                  </li>
-                </ul>
-              </section>
-            </div>
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            Extracted user credentials including usernames and hashed passwords from the <span className="text-green-300 font-mono">users</span> table.
+          </span>
+        </li>
+
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            Analyzed authorization structure including permissions, privilege levels, and user group relationships.
+          </span>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
+    <h3 className="text-green-200 text-lg font-medium">Web Application Penetration Test – Micro-CMS v1</h3>
+    <p className="mt-2 text-sm text-gray-300">
+      Conducted a systematic security assessment of a Content Management System, successfully identifying and exploiting 4 critical vulnerabilities to capture all system flags.
+    </p>
+
+    <p className="mt-3 text-sm text-gray-300">
+      <span className="text-cyber-muted">Medium write up:</span>{' '}
+      <a className="text-green-300 hover:underline font-medium" href="https://medium.com/@oluwasheun9721/cracking-micro-cms-v1-a-full-4-flag-ctf-walkthrough-51d5dc094376" target="_blank" rel="noreferrer noopener">
+        Medium write up Link
+      </a>
+    </p>
+
+    <div className="mt-4">
+      <p className="text-xs tracking-widest text-cyber-muted">Key Vulnerabilities:</p>
+      <ul className="mt-3 space-y-3">
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            <span className="text-green-300 font-mono">IDOR</span>: Bypassed authorization on the <span className="font-mono">/edit</span> route to access restricted data.
+          </span>
+        </li>
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            <span className="text-green-300 font-mono">Stored XSS</span>: Exploited unvalidated "Title" fields to achieve persistent script execution.
+          </span>
+        </li>
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            <span className="text-green-300 font-mono">SQL Injection</span>: Used boolean-based payloads (' or 1=1) to bypass database lookups and extract privileged records.
+          </span>
+        </li>
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            <span className="text-green-300 font-mono">Reflected XSS</span>: Leveraged improper error handling on 404 pages to execute JavaScript via the URL path.
+          </span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
+    <h3 className="text-green-200 text-lg font-medium">Web Application Security Assessment – AAVA Brands</h3>
+    <ul className="mt-4 space-y-3">
+      <li className="flex gap-3 text-sm text-gray-200">
+        <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+        <span>Identified misconfigurations including debug exposure and IDOR risks.</span>
+      </li>
+      <li className="flex gap-3 text-sm text-gray-200">
+        <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+        <span>Provided remediation aligned with OWASP Top 10.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
+    <h3 className="text-green-200 text-lg font-medium">Information Security Risk Management – AAVA Brands</h3>
+
+    <ul className="mt-4 space-y-3">
+      <li className="flex gap-3 text-sm text-gray-200">
+        <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+        <span>
+          <span className="text-green-300 font-mono">Risk Analysis</span>: Identified threats like credential stuffing and data breaches across critical assets such as web applications and database servers.
+        </span>
+      </li>
+      <li className="flex gap-3 text-sm text-gray-200">
+        <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+        <span>
+          <span className="text-green-300 font-mono">Vulnerability Assessment</span>: Pinpointed system weaknesses including unpatched databases, lack of rate limiting, and weak password policies.
+        </span>
+      </li>
+      <li className="flex gap-3 text-sm text-gray-200">
+        <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+        <span>
+          <span className="text-green-300 font-mono">Strategic Mitigation</span>: Developed a risk register calculating impact vs. likelihood and recommended controls like MFA, patch management, and IDS/IPS monitoring.
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
+    <h3 className="text-green-200 text-lg font-medium">Secure AI Infrastructure Deployment – AAVA Brands</h3>
+
+    <ul className="mt-4 space-y-3">
+      <li className="flex gap-3 text-sm text-gray-200">
+        <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+        <span>
+          <span className="text-green-300 font-mono">Initiative</span>: Built an isolated Windows Server 2019 environment to bypass domain-level blocks on essential AI tools (ChatGPT, Julia, Notebooks).
+        </span>
+      </li>
+      <li className="flex gap-3 text-sm text-gray-200">
+        <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+        <span>
+          <span className="text-green-300 font-mono">Access Control</span>: Configured secure remote access for senior management, providing high-productivity tools without compromising the primary DPworld domain controller.
+        </span>
+      </li>
+      <li className="flex gap-3 text-sm text-gray-200">
+        <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+        <span>
+          <span className="text-green-300 font-mono">Governance</span>: Executed the project with end-to-end approval from the IT Manager, Head of IT, and General Manager.
+        </span>
+      </li>
+    </ul>
+  </section>
+
+</div>
+            
+
           </div>
+          
         </div>
       </div>
     </div>
