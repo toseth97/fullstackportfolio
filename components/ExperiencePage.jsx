@@ -190,6 +190,71 @@ export default function ExperiencePage() {
   </section>
 
   <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
+    <h3 className="text-green-200 text-lg font-medium">Web Application Security Lab – DVWA (SQL Injection | Medium Security)</h3>
+
+    <p className="mt-2 text-sm text-gray-300">
+      Advanced SQL Injection assessment on DVWA with Medium security level, where special characters are escaped (' becomes \'). Demonstrates evasion techniques using <span className="text-green-300 font-mono">char()</span> and <span className="text-green-300 font-mono">unhex()</span> functions to bypass input sanitization.
+    </p>
+
+    <p className="mt-3 text-sm text-gray-300">
+      <span className="text-cyber-muted">Medium write up:</span>{' '}
+      <a className="text-green-300 hover:underline font-medium" href="https://medium.com/@oluwasheun9721/breaking-down-sql-injection-in-dvwa-medium-security-from-authentication-bypass-to-full-database-6712ab94708f" target="_blank" rel="noreferrer noopener">
+        Lab Write-up
+      </a>
+    </p>
+
+    <div className="mt-4">
+      <p className="text-xs tracking-widest text-cyber-muted">Key Techniques:</p>
+      <ul className="mt-3 space-y-3">
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            Used <span className="text-green-300 font-mono">char(39)</span> or <span className="text-green-300 font-mono">unhex(27)</span> to generate single quotes for bypass since ' is escaped to \' in Medium security.
+          </span>
+        </li>
+
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            Employed <span className="text-green-300 font-mono">CHAR()</span> function with decimal ASCII codes to encode string values (e.g., <span className="font-mono">CHAR(117,115,101,114,115)</span> for 'users').
+          </span>
+        </li>
+
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            Performed full database enumeration: identified tables including <span className="text-green-300 font-mono">users</span>, <span className="text-green-300 font-mono">guestbook</span>, <span className="text-green-300 font-mono">accounts</span>, <span className="text-green-300 font-mono">credit_cards</span>, <span className="text-green-300 font-mono">captured_data</span>.
+          </span>
+        </li>
+
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            Extracted sensitive data: user credentials (MD5 hashes), credit card numbers, captured user agents, IP addresses, and internal network information.
+          </span>
+        </li>
+
+        <li className="flex gap-3 text-sm text-gray-200">
+          <span className="mt-1 w-2 h-2 rounded-full bg-green-400" />
+          <span>
+            Enumerated permission structures: <span className="text-green-300 font-mono">users_permissions</span>, <span className="text-green-300 font-mono">users_groups</span>, <span className="text-green-300 font-mono">users_usergroups</span> for privilege mapping.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div className="mt-4">
+      <p className="text-xs tracking-widest text-cyber-muted">CHAR() Encoding Reference:</p>
+      <ul className="mt-3 space-y-2 text-xs text-gray-400">
+        <li><span className="text-green-300 font-mono">Lowercase (a-z):</span> a=97, b=98, c=99...</li>
+        <li><span className="text-green-300 font-mono">Uppercase (A-Z):</span> A=65, B=66, C=67...</li>
+        <li><span className="text-green-300 font-mono">Numbers (0-9):</span> 0=48, 1=49, 2=50...</li>
+        <li><span className="text-green-300 font-mono">Special:</span> ' = 39, " = 34, _ = 95</li>
+      </ul>
+    </div>
+  </section>
+
+  <section className="border border-gray-800 bg-black/10 rounded-xl p-5">
     <h3 className="text-green-200 text-lg font-medium">Web Application Penetration Test – Micro-CMS v1</h3>
     <p className="mt-2 text-sm text-gray-300">
       Conducted a systematic security assessment of a Content Management System, successfully identifying and exploiting 4 critical vulnerabilities to capture all system flags.
